@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Wedding Invitation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Cinzel',serif;
+background:black;
+overflow-x:hidden;
+color:white;
+}
+
+/* INTRO */
+
+.intro{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:
+radial-gradient(circle at top, rgba(255,215,0,0.3), transparent 35%),
+linear-gradient(to bottom,#000,#111);
+}
+
+.arabic{
+font-size:48px;
+color:#d4af37;
+margin-bottom:25px;
+}
+
+.intro h1{
+font-family:'Great Vibes',cursive;
+font-size:70px;
+color:#d4af37;
+margin-bottom:15px;
+}
+
+.intro p{
+font-size:28px;
+letter-spacing:3px;
+margin-bottom:40px;
+}
+
+/* BOX BUTTON DESIGN */
+.btn{
+padding:18px 60px;
+font-size:26px;
+border:2px solid #d4af37; /* Gold box border */
+border-radius:0px;        /* Sharp rectangular box shape */
+background:black;         /* Black background */
+color:#d4af37;            /* Gold text color */
+cursor:pointer;
+font-weight:bold;
+letter-spacing:2px;
+box-shadow:0 0 20px rgba(212,175,55,0.3);
+transition: all 0.4s ease; /* Smooth transition for background fill */
+animation:pulse 2s infinite;
+}
+
+/* Hover Effect: Box fills with yellow/gold theme */
+.btn:hover {
+background: #ffd700;      /* Vibrant gold background */
+color: black;             /* Text flips to black */
+box-shadow: 0 0 35px #ffd700;
+animation-play-state: paused; /* Pauses the pulsing movement on hover */
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.04);}
+100%{transform:scale(1);}
+}
+
+/* CARD */
+
+.card{
+display:none;
+min-height:100vh;
+padding:40px 20px;
+background:
+linear-gradient(rgba(0,0,0,0.88),rgba(0,0,0,0.92)),
+url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1400&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+}
+
+.invitation{
+max-width:900px;
+margin:auto;
+padding:60px 30px;
+border:2px solid #d4af37;
+border-radius:25px;
+background:rgba(0,0,0,0.72);
+text-align:center;
+box-shadow:0 0 40px rgba(212,175,55,0.5);
+animation:fadeIn 2s ease;
+backdrop-filter:blur(5px);
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* STYLISH SEPARATOR LINE */
+.separator {
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 25px auto;
+width: 60%;
+color: #d4af37;
+font-size: 14px;
+letter-spacing: 2px;
+}
+
+.separator::before, .separator::after {
+content: "";
+flex: 1;
+height: 1px;
+background: linear-gradient(to var(--direction, right), transparent, #d4af37);
+}
+
+.separator::after {
+--direction: left;
+}
+
+.separator span {
+padding: 0 15px;
+font-size: 10px;
+text-shadow: 0 0 5px gold;
+}
+
+.sub{
+font-size:26px;
+margin-top:10px;
+color:#f5deb3;
+line-height:1.7;
+}
+
+.title{
+font-family:'Great Vibes',cursive;
+font-size:62px;
+color:#d4af37;
+margin:20px 0;
+}
+
+.name{
+font-size:52px; 
+font-weight:700;
+line-height:1.4;
+margin:25px 0;
+letter-spacing:1px;
+}
+
+.desc{
+font-size:24px;
+line-height:1.8;
+margin-top:20px;
+color:#f3f3f3;
+}
+
+.details{
+margin-top:40px;
+font-size:25px;
+line-height:2.2;
+}
+
+.footer{
+margin-top:45px;
+font-size:24px;
+color:#d4af37;
+}
+
+/* GOLD PARTICLES */
+
+.glow{
+position:fixed;
+width:8px;
+height:8px;
+background:gold;
+border-radius:50%;
+opacity:0.7;
+animation:float 8s linear infinite;
+}
+
+@keyframes float{
+from{
+transform:translateY(100vh) translateX(0);
+}
+to{
+transform:translateY(-120vh) translateX(100px);
+}
+}
+
+/* MOBILE OPTIMIZATIONS */
+@media(max-width:768px){
+
+.arabic{
+font-size:34px;
+}
+
+.intro h1{
+font-size:48px;
+}
+
+.intro p{
+font-size:22px;
+}
+
+.title{
+font-size:42px;
+}
+
+/* Optimized name size to fit flawlessly on small screens */
+.name{
+font-size:28px; 
+line-height:1.5;
+margin:20px 0;
+}
+
+.desc,.details,.footer,.sub{
+font-size:20px;
+}
+
+.separator {
+width: 80%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="intro" id="intro">
+
+<div class="arabic">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+
+<h1>A Beautiful Celebration</h1>
+
+<p>ARE YOU READY?</p>
+
+<button class="btn" onclick="openInvite()">OPEN INVITATION</button>
+
+</section>
+
+<section class="card" id="card">
+
+<div class="invitation">
+
+<div class="arabic">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+
+<div class="separator"><span>♦</span></div>
+
+<div class="sub">
+We Are Cordially Invited To
+</div>
+
+<div class="title">
+The Wedding Reception Of
+</div>
+
+<div class="separator"><span>♦</span></div>
+
+<div class="name">
+MR & MRS<br>
+SHAMS UR RAHMAN
+</div>
+
+<div class="separator"><span>♦</span></div>
+
+<div class="desc">
+Your presence will add joy and blessings<br>
+to this special occasion.
+</div>
+
+<div class="separator"><span>♦</span></div>
+
+<div class="details">
+
+📅 <b>Friday, 05 June</b><br>
+
+⏰ <b>10:00 AM To 5:00 PM</b><br>
+
+📍 <b>River Royale Resort And Gulona Marquee, Qandil</b>
+
+</div>
+
+<div class="separator"><span>♦</span></div>
+
+<div class="footer">
+We Look Forward To Celebrating With You ✨
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+function openInvite(){
+
+document.getElementById("intro").style.display="none";
+document.getElementById("card").style.display="block";
+
+}
+
+for(let i=0;i<40;i++){
+
+let glow=document.createElement('div');
+
+glow.classList.add('glow');
+
+glow.style.left=Math.random()*100+'vw';
+
+glow.style.animationDuration=(5+Math.random()*5)+'s';
+
+glow.style.width=(4+Math.random()*8)+'px';
+
+glow.style.height=glow.style.width;
+
+document.body.appendChild(glow);
+
+}
+
+</script>
+
+</body>
+</html>
